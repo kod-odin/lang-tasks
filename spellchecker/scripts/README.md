@@ -10,4 +10,15 @@ pip3 install razdel
 
 python3 sentence_split.py
 
-Файлы с результаты появятся в папке result.
+Файлы с результами появятся в папке result.
+
+
+Скрипт sentence_selection.py предназначен для подготовки предложений, чтобы загрузить их в Common Voice: https://commonvoice.mozilla.org/sentence-collector/#/ru
+
+В папку source поместите файлы в *.txt, которые хотите разбить по предложениям для загрузки в Common Voice.
+
+Запустите скрипт:
+
+python3 sentence_selection.py
+
+Файлы с результами появятся в папке result, где файлы *.txt.1.txt – можно сразу загружать в Common Voice, а файлы *.txt.more_than_13.1.txt – необходимы дорабатывать: там в предложениях более 13 слов или содержать скобки и цифры – такие предложения коллектор предложений Common Voice не даёт загружать.
